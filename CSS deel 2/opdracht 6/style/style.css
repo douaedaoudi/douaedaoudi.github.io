@@ -1,0 +1,21 @@
+.checklist{
+    padding: 0;
+}
+
+.checklist li{
+    padding-left: 1.5em;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+}
+
+.checklist li.checked{
+    background-image: url("../icons8-check-30.png");
+}
+
+.checklist li:not(.checked){
+    background-position: left center;
+    background-image: url("../642843_check-box_512x512.png");
+    background-repeat: no-repeat;
+}

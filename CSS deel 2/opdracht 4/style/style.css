@@ -1,0 +1,42 @@
+body{
+    font-family: "verdana";
+    font-size: 1.1em;
+    background-color: silver;
+    color: #2B2D42;
+}
+
+h1{
+    font; font-variant: small-caps;
+    background-color: solid red;
+}
+
+
+a:hover {
+    border: 1px solid #333;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+}
+
+.stippeltjesrand {
+    border: 1px dotted #666;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+a {
+    display: inline-block;
+    padding-left: 20px;
+    background-image: url("icon.png");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #0073e6;
+}
