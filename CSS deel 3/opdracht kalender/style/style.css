@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+table {
+    border-collapse: collapse;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+th, td {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(170, 170, 200);
+    padding: 10px;
+}
+
+th {
+    background-color: rgb(35, 37, 70);
+    color: rgb(200, 190, 240);
+    font-weight: bold;
+}
+
+td.grijs {
+    background-color: #d3d3d3;
+    color: #888;
+}
+
+td:first-child, td:last-child {
+    background-color: rgb(255, 220, 220);
+}
+
+td.vrijedag {
+    background-color: rgb(250, 120, 120);
+}
