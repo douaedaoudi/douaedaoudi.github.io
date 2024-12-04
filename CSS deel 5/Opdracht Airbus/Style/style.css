@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2.5%;
+
+}
+
+.column{
+    float: left;
+    width: 50%;
+
+}
+
+.column_content{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.top{
+    background : url(../Images/bgsky3.jpg);
+    margin: auto;
+    text-align: center;
+    color: darkblue;
+    height: 200px;
+    padding: 10px;
+}
+.top img{
+    position: absolute;
+    top: 120px;
+    right: 285px;
+}
+
+#first_title{
+    font-size: 300%;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+#second_title{
+    font-size: 240%;
+    font-weight: bold;
+}
+.news{
+    width: 25%;
+    float:right;
+    border: 1px #666666;
+    background: #dddddd;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.news h3{
+    color: white;
+    background: blue;
+    text-align: center;
+    font-size: 120%;
+}
+
+.main {
+    width: 75%;
+    margin: 10px;
+}
+
+.introduction{
+    background: white;
+    color: black;
+    padding: 20px 30px 20px 0;
+    text-align: justify;
+
+}
+
+.introduction span{
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+.logo{
+    float: left;
+    padding: 20px 20px 80px 20px;
+}
+
+.gallery{
+    background: #999999;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.gallery img{
+    height: 180px;
+    width: 180px;
+    padding: 10px;
+    background-color: white;
+    margin: 0;
+    border: 1px dotted #999999;
+    float: left;
+
+}
+
+.bottom{
+    background: #666666;
+    color: white;
+    line-height: 2em;
+    display: flex;
+}
+
+.block{
+    padding-left: 120px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.copyright {
+    text-align: center;
+}
