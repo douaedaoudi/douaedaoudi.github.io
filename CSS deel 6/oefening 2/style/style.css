@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+}
+
+.row {
+    text-align: center;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-fluid {
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+}
+.row > div {
+    height: 250px;
+    width: 250px;
+}
+.col-md-1, .col-md-3 {
+    background-color: darkgray;
+}
+
+.col-md-2, .col-md-4 {
+    background-color: gray;
+}
+@media screen and (min-width: 480px) {
+    .col {
+        flex: 1 1 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .col {
+        flex: 1 1 25%;
+    }
+}

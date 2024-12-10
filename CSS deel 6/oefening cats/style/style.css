@@ -1,0 +1,22 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+img {
+    border: 10px solid black;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: pink;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-color: lightskyblue;
+    }
+
+}

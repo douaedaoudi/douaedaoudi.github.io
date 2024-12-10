@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.row {
+    text-align: center;
+    gap: 10px;
+}
+
+.container-fluid {
+    display: grid;
+    gap: 10px;
+    width: 100%;
+}
+
+.row > div {
+    height: 100px;
+}
+.col-md-1{
+    width: 32.60%;
+    text-align: center;
+    background-color: darkgray;
+}
+
+.col-md-2{
+    background-color: gray;
+    width: 32.60%;
+}
+
+.col-md-3{
+    background-color: darkgray;
+    width: 9%;
+}
+
+.col-md-4{
+    background-color: gray;
+    width: 80%;
+}
+
+.col-md-5{
+    background-color: darkgray;
+    width: 20%;
+}
+
+.col-md-6{
+    background-color: gray;
+    width: 70%;
+}
+
+.col-md-7{
+    background-color: darkgray;
+    width: 8%;
+}
