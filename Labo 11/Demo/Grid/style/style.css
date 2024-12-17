@@ -42,7 +42,7 @@ section{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr; /* 1/4 vd breedte 2/4 vd breedte 1/4*/
     /*grid-template-columns: 25% 50% 25% */
-    grid-template-rows: 1fr 3fr 1fr; /* de height van de kollomen ,alle 3 gelijk: auto auto auto*/
+    grid-template-rows: 1fr 3fr 1fr; /* de height van de kolommen ,alle 3 gelijk: auto auto auto*/
     grid-gap: 20px;
 }
 
