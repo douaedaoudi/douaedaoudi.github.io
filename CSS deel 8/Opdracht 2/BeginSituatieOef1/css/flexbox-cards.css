@@ -63,9 +63,11 @@ a {
 }
 
 .container {
-/* flex-eigenschappen */
+display: flex;
+
 }
 
 .card {
-    /* flex-eigenschappen */
+    display: flex;
+    flex-direction: column;
 }
