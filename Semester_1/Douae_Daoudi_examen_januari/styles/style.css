@@ -1,0 +1,83 @@
+body{
+    font-family: Arial, Courier New, sans-serif;
+    padding: 0;
+    color: #292929;
+    background: url("../examenbestanden/chips_challenge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    background-color: #292929;
+    color: white;
+    text-align: center;
+}
+header > a:link{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+h2{
+    border-bottom: #292929 2px solid;
+}
+section{
+    background-color: white;
+    border-radius: 15px;
+    font-size: 10px;
+}
+.eerstesection > p:first-letter{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tweedesection{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 1em;
+    flex-direction: row;
+    margin-top:2.5%;
+}
+li{
+    list-style: none;
+}
+.titel{
+    font-style: italic;
+}
+
+li > a:link{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    background-color: #a7a5a5;
+    color: black;
+    padding: 0.25em 0 0.25em 0;
+    font-size: 0.8em;
+}
+footer > a:link{
+    text-decoration: none;
+    color: #ce0000;
+}
+
+footer >a:hover{
+    text-decoration: underline;
+}
+
+.informatie{
+    border-bottom: dotted 1px #aaa;
+
+}
+.bron{
+    text-align: right;
+}
