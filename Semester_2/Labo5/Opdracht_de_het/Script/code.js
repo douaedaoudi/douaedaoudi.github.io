@@ -6,11 +6,11 @@ const setup = () => {
 }
 
 const toConsole = (input) => {
-    let text = input.value;
-    console.log(text);
+    let woord = input.value;
+    console.log(woord);
 
-    let newText = text.split("de").join("het");
+    let nieuwWoord = woord.split("de").join("het");
 
-    console.log(newText);
+    console.log(nieuwWoord);
 };
 window.addEventListener("load", setup);
