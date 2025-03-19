@@ -2,7 +2,7 @@ const setup = () => {
     let gemeenten = [];
 
     while (true) {
-        let gemeente = prompt("Geef een gemeente in (typ 'stop' om te stoppen):");
+        let gemeente = prompt("Geef een gemeente op (typ 'stop' om te stoppen):");
         if (gemeente === null || gemeente.toLowerCase() === 'stop') {
 
             break;
@@ -13,12 +13,12 @@ const setup = () => {
         }
     }
     gemeenten.sort();
-    let gemeenteSelect = document.getElementById("gemeenteSelect");
+    let gemeentes = document.getElementById("gemeentes");
     gemeenten.forEach(gemeente => {
         let option = document.createElement("option");
         option.value = gemeente;
         option.textContent = gemeente;
-        gemeenteSelect.appendChild(option);
+        gemeentes.appendChild(option);
     })
 }
 window.addEventListener("load", setup);

@@ -6,44 +6,41 @@ const setup = () => {
 const valideer = () => {
     let allValid = true;
 
-
     let txtVoornaam = document.getElementById("txtVoornaam");
     let errVoornaam = document.getElementById("errVoornaam");
     let voornaam = txtVoornaam.value.trim();
 
     if (voornaam.length > 30) {
         txtVoornaam.className = "invalid";
-        errVoornaam.innerHTML = "Max. 30 karakters";
+        errVoornaam.innerHTML = "Max. 30 karakters.";
         allValid = false;
     } else {
         txtVoornaam.className = "";
         errVoornaam.innerHTML = "";
     }
 
-    // Validatie familienaam
-    let txtfamillieNaam = document.getElementById("txtfamillieNaam");
-    let errfamillieNaam = document.getElementById("errfamillieNaam");
-    let famillienaam = txtfamillieNaam.value.trim();
+    let txtFamilienaam = document.getElementById("txtFamilienaam");
+    let errFamilienaam = document.getElementById("errFamilienaam");
+    let familienaam = txtFamilienaam.value.trim();
 
-    if (!famillienaam) {
-        txtfamillieNaam.className = "invalid";
-        errfamillieNaam.innerHTML = "Dit veld is verplicht";
+    if (!familienaam) {
+        txtFamilienaam.className = "invalid";
+        errFamilienaam.innerHTML = "Dit veld is verplicht.";
         allValid = false;
-    } else if (famillienaam.length > 50) {
-        txtfamillieNaam.className = "invalid";
-        errfamillieNaam.innerHTML = "Max. 50 karakters";
+    } else if (familienaam.length > 50) {
+        txtFamilienaam.className = "invalid";
+        errFamilienaam.innerHTML = "Max. 50 karakters";
         allValid = false;
     } else {
-        txtfamillieNaam.className = "";
-        errfamillieNaam.innerHTML = "";
+        txtFamilienaam.className = "";
+        errFamilienaam.innerHTML = "";
     }
 
-    // Validatie geboortedatum
-    let txtGeboortedatum = document.getElementById("geboortedatum");
-    let errGeboortedatum = document.getElementById("errgeboortedatum");
-    let geboortedatum = txtGeboortedatum.value;
+    let txtGeboortedatum = document.getElementById("Geboortedatum");
+    let errGeboortedatum = document.getElementById("errGeboortedatum");
+    let Geboortedatum = txtGeboortedatum.value;
 
-    if (!geboortedatum) {
+    if (!Geboortedatum) {
         txtGeboortedatum.className = "invalid";
         errGeboortedatum.innerHTML = "Verplicht veld";
         allValid = false;
@@ -52,14 +49,13 @@ const valideer = () => {
         errGeboortedatum.innerHTML = "";
     }
 
-    // Validatie email
     let txtEmail = document.getElementById("txtEmail");
     let errEmail = document.getElementById("errEmail");
     let email = txtEmail.value.trim();
 
     if (!email) {
         txtEmail.className = "invalid";
-        errEmail.innerHTML = "Verplicht veld";
+        errEmail.innerHTML = "Verplicht veld.";
         allValid = false;
     } else if (!email.includes("@") || email.startsWith("@") || email.endsWith("@")) {
         txtEmail.className = "invalid";
@@ -70,20 +66,18 @@ const valideer = () => {
         errEmail.innerHTML = "";
     }
 
-    // Validatie aantal kinderen
     let txtAantalKinderen = document.getElementById("txtAantalKinderen");
     let errAantalKinderen = document.getElementById("errAantalKinderen");
     let aantalKinderen = txtAantalKinderen.value.trim();
 
-    // Check if the field is not empty and validate the number
     if (aantalKinderen && (isNaN(aantalKinderen) || aantalKinderen < 0 || aantalKinderen > 99)) {
         txtAantalKinderen.className = "invalid";
         if (isNaN(aantalKinderen)) {
-            errAantalKinderen.innerHTML = "Voer een geldig getal in";
+            errAantalKinderen.innerHTML = "is geen positief getal";
         } else if (aantalKinderen < 0) {
-            errAantalKinderen.innerHTML = "Het aantal kinderen mag niet negatief zijn";
+            errAantalKinderen.innerHTML = "is geen positief getal";
         } else if (aantalKinderen > 99) {
-            errAantalKinderen.innerHTML = "Max. 99 kinderen";
+            errAantalKinderen.innerHTML = "is te vruchtbaar";
         }
         allValid = false;
     } else {
@@ -91,7 +85,6 @@ const valideer = () => {
         errAantalKinderen.innerHTML = "";
     }
 
-    // If all fields are valid, show the congratulatory message
     if (allValid) {
         alert("Proficiat! Alle velden zijn correct ingevuld.");
     }
